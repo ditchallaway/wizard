@@ -1,3 +1,4 @@
+
 version: '3'
 
 services:
@@ -24,12 +25,13 @@ services:
       - "127.0.0.1:8000:8000"
     environment:
       - DEBUG=True
-      - SECRET_KEY=somethingsupersecret
+      - SECRET_KEY=Th3t1m315n0w15h0k4y
+    volumes:
       - BASE_URL=http://0.0.0.0:3000
       - DATABASE_URL=postgres://postgres:postgres@db:5432/postgres
-      - DEFAULT_FROM_EMAIL=hello@chiefonboarding.com
-      - ACCOUNT_EMAIL=admin@example.com
-      - ACCOUNT_PASSWORD=admin
+      - DEFAULT_FROM_EMAIL=hello@jobslayer.pro
+      - ACCOUNT_EMAIL=in.the.air.jkb@gmail.com
+      - ACCOUNT_PASSWORD=Th3t1m315n0w15h0k4y
     volumes:
       - ./back:/app
     depends_on:
